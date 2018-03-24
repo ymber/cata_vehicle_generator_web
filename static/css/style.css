@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #002b36;
+    color: #93a1a1;
+}
+
+.right-panel {
+    float: right;
+    width: 20%;
+    background-color: #073642;
+    color: #93a1a1;
+    padding: 1%;
+}
+
+.json-field {
+    width: 79%;
+    height: 80%;
+    overflow: scroll;
+    padding: 1% 2%;
+    display: inline-block;
+}
+
+.name-field {
+    width: 40%;
+    padding: 1% 2%;
+    display: inline-block;
+}
+
+.gen-button {
+    background-color: #073642;
+    border: none;
+    color: #93a1a1;
+    padding: 1% 2%;
+    text-align: center;
+    display: inline-block;
+}
+
+.code {
+    font-family: "Droid Sans Mono";
+}
