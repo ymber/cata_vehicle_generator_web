@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background-color: #002b36;
+    background-color: #1E1E1E;
     color: #93a1a1;
     margin: 0;
     padding: 1%;
@@ -17,7 +17,7 @@ body {
 .right-panel {
     float: right;
     width: 20%;
-    background-color: #073642;
+    background-color: #252526;
     color: #93a1a1;
     padding: 1%;
 }
@@ -44,9 +44,9 @@ body {
 }
 
 .button {
-    background-color: #073642;
+    background-color: #333333;
     border: none;
-    color: #268bd2;
+    color: #93a1a1;
     padding: 1% 2%;
     text-align: center;
     display: inline-block;
