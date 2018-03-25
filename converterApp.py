@@ -28,7 +28,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/out", methods=["POST"])
-def rawOut():
+def presentOut():
     return render_template("out.html",
                             output=writeDef(*findVehicle(json.loads(request.form["mapdata"]), request.form["vehicleName"])),
                             error="JSON validated")
