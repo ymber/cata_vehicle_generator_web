@@ -12,9 +12,11 @@
     <body>
         <div class="right-panel">
             <p class="error">{{ error }}</p>
+            <button class="button" form="json-out" type="submit">Raw output</button>
         </div>
         <div class="data-area">
-            <textarea class="json-field" name="output-area">{{ output }}</textarea>
+            <form method="POST" action="{{ url_for("rawOut") }}" id="json-out"></form>
+            <textarea readonly class="json-field" name="output-area" form="json-out">{{ output }}</textarea>
         </div>
     </body>
 </html>

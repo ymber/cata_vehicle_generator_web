@@ -43,10 +43,10 @@ body {
     font-family: "Droid Sans Mono";
 }
 
-.gen-button {
+.button {
     background-color: #073642;
     border: none;
-    color: #93a1a1;
+    color: #268bd2;
     padding: 1% 2%;
     text-align: center;
     display: inline-block;

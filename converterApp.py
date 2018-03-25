@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, Response, render_template, url_for, request, redirect
 import json
 
 app = Flask(__name__)
@@ -43,3 +43,7 @@ def presentOut():
     return render_template("out.html",
                             output=writeDef(*findVehicle(json.loads(request.form["mapdata"]), request.form["vehicleName"])),
                             error="JSON validated")
+
+@app.route("/out/raw", methods=["POST"])
+def rawOut():
+    return Response(request.form["output-area"], mimetype="application/json")
