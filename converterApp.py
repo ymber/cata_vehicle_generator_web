@@ -25,8 +25,10 @@ def writeDef(vehicle, vehicleName):
 
 @app.route("/")
 def index():
-    return render_template("index.html", teststring="Cataclysm DDA Vehicle Generator")
+    return render_template("index.html")
 
 @app.route("/out", methods=["POST"])
 def rawOut():
-    return render_template("out.html", output=writeDef(*findVehicle(json.loads(request.form["mapdata"]), request.form["vehicleName"])))
+    return render_template("out.html",
+                            output=writeDef(*findVehicle(json.loads(request.form["mapdata"]), request.form["vehicleName"])),
+                            error="JSON validated")

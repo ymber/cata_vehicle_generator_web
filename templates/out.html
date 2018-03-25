@@ -10,6 +10,11 @@
         <title>Cataclysm DDA Vehicle Definition Generator</title>
     </head>
     <body>
-        <p>{{ output }}</p>
+        <div class="right-panel">
+            <p class="error">{{ error }}</p>
+        </div>
+        <div class="data-area">
+            <textarea class="json-field" name="output-area">{{ output }}</textarea>
+        </div>
     </body>
 </html>

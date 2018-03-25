@@ -22,14 +22,14 @@
                 <li>Check output and tweak as desired. 
                     Container defaults and such are not stored for a custom vehicle and must be added manually.</li>
             </ul>
+            <p class="error">{{ error }}</p>
         </div>
-        <div >
-            <form method="POST" action="{{ url_for("rawOut") }}">
+        <div class="data-area">
+            <form method="POST" action="{{ url_for("rawOut") }}" id="data-form">
                 <input class="name-field" type="text" placeholder="Vehicle name" name="vehicleName">
-                <input class="json-field" type="text" placeholder=".map file JSON" name="mapdata">
                 <button class="gen-button" type="submit">Generate</button>
             </form>
+            <textarea class="json-field" form="data-form" placeholder=".map file JSON" name="mapdata"></textarea>
         </div>
-        
     </body>
 </html>
